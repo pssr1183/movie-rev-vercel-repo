@@ -8,7 +8,7 @@ function MovieReviewApp() {
   const submitReview = async () => {
   try {
     const reviewsArray = reviewText.split('\n').map((review) => review.trim());
-    const response = await axios.post('http://localhost:5000/predict', { reviews: reviewsArray });
+    const response = await axios.post('https://flask-backend-moview-review.onrender.com/predict', { reviews: reviewsArray });
     const receivedRating = response.data.rating;
     setRating(receivedRating);
    
