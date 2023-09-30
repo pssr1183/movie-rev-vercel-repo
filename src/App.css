@@ -4,6 +4,9 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
+  background-image: url('background-img.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   display: flex;
@@ -13,8 +16,8 @@ body {
 }
 
 .container {
-  max-width: 400px;
-  padding: 20px;
+  max-width: 450px;
+  padding: 30px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -29,16 +32,16 @@ h1 {
 /* Review Form Styles */
 textarea {
   width: 100%;
-  padding: 5px;
+  padding: 1px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: none;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 button {
-  background-color: #007bff;
+  background-color: #101a24;
   color: #fff;
   border: none;
   padding: 12px 20px;
@@ -49,13 +52,14 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #66696c;
 }
 
 /* Rating Styles */
 h2 {
   color: #333;
   margin-top: 20px;
+  font-size: 20pxz;
 }
 
 /* Error Message Styles */
@@ -69,3 +73,23 @@ footer {
   color: #777;
   margin-top: 20px;
 }
+
+
+/* Onclick transitions */
+.container {
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.2);
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+/* Other CSS */
+textarea {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
